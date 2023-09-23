@@ -54,10 +54,21 @@ keys = list(el.keys())
 rnd.shuffle(keys)
 
 result = 0
+wrong_answered = {}
 
 for i in range(10):
     inp = input(f"Что такое {keys[i]}? ")
     if inp.casefold() == el[keys[i]].casefold():
         result += 1
+    else:
+        wrong_answered[keys[i]] = inp
 
 print(f"Ваш результат: {result / 10 * 100}% ({result} из 10)")
+
+if result != 10:
+    print()
+    print("Неправильные ответы: ")
+    for key in wrong_answered.keys():
+        print(f"{key} - {wrong_answered[key]} (Правильный ответ - {el[key]})")
+
+last = input()
