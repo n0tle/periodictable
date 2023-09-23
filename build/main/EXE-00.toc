@@ -94,7 +94,7 @@
  [],
  False,
  False,
- 1695462197,
+ 1695463212,
  [('run.exe',
    'C:\\Users\\matvey\\PycharmProjects\\mendeleev\\venv\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
    'EXECUTABLE')],
